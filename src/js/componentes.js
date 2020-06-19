@@ -29,6 +29,8 @@ export const crearTodoHtml = (todo) => {
 
 //Eventos
 txtInput.addEventListener('keyup', (event) => {
+    console.log(event);
+    console.log(event.keyCode);
     if (event.keyCode == 13 && txtInput.value.length > 0) {
         const nuevoTodo = new Todo(txtInput.value);
         todoList.nuevoTodo(nuevoTodo);
