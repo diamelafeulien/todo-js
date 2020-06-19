@@ -24,3 +24,13 @@ npm run build
 -- lo siguiente por hacer es enlazar el repositorio local de github(estos comandos se sacan de la pagina)
 -- git remote add origin https://github.com/diamelafeulien/todo-js.git
 -- git push -u origin master
+
+
+-- para modificaciones ejecutar los siguientes pasos:
+-- npm run build
+-- elimino la carpeta DOCS
+-- renombro la carpeta dist por docs 
+-- git add .
+-- git commit -m "DOCS creado"
+-- git remote add origin https://github.com/diamelafeulien/todo-js.git
+-- git push -u origin master
