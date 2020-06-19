@@ -41,7 +41,7 @@ txtInput.addEventListener('keyup', (event) => {
 divTodoList.addEventListener('click', (event) => {
     const nombreElemento = event.target.localName; //puede ser un input, label o button
     const todoElemento = event.target.parentElement.parentElement; // para obtener referencia a todo el elemento html <li> y su contenido
-    const todId = todoElemento.getAttribute('data-id');
+    const todoId = todoElemento.getAttribute('data-id');
 
     if (nombreElemento.includes('input')) { // es porque se hizo click eb el check
         todoList.marcarCompletado(todoId);
