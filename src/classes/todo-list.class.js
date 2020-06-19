@@ -38,7 +38,7 @@ export class TodoList {
     }
 
     cargarLocalStrage() {
-        this.todos = (localStorage.detItem('todo')) ?
+        this.todos = (localStorage.getItem('todo')) ?
             JSON.parse(localStorage.getItem('todo')) : [];
 
         // this.todos = this.todos.map(obj => Todo.fromJson(obj)); // se lo puede plantear de la siguiente manera
